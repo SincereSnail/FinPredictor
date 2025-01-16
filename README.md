@@ -33,3 +33,28 @@
 git clone https://github.com/SincereSnail/FinPredictor.git
 cd FinPredictor
 pip install -r requirements.txt
+
+### 2️⃣ 실행
+```bash
+python main.py
+
+### 3️⃣ 환경 변수 설정 (.env)
+```makefile
+API_KEY=your_api_key
+TRADING_API_KEY=your_trading_api_key
+TRADING_SECRET_KEY=your_secret_key
+
+## 🛠️ 기술 스택
+- Python 3.10
+- TensorFlow / PyTorch – 머신러닝 모델 학습 및 예측
+- Pandas, NumPy – 데이터 처리 및 분석
+- Matplotlib, Seaborn – 데이터 시각화
+- Fast Api – 주식 데이터 수집 
+- Selenium / BeautifulSoup – 웹 크롤링
+- Docker – 배포 및 환경 관리 (예정)
+
+## 🏗️ 아키텍처
+[ 데이터 수집 ] → [ 데이터 전처리 ] → [ 모델 학습 ] → [ 예측 ] → [ 자동 거래 ]
+       ▲                                                    |
+       └───────────────── 피드백 및 성능 개선 ───────────────┘
+
