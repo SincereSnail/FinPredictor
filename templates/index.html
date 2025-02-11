@@ -1,0 +1,19 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주식 예측 시스템</title>
+</head>
+<body>
+    <h1>주식 예측 시스템</h1>
+    <form action="/predict" method="post">
+        <input type="text" name="ticker" placeholder="티커 입력">
+        <button type="submit">예측하기</button>
+    </form>
+    {% if prediction %}
+        <h2>예측 가격: {{ prediction['predicted_price'] }}</h2>
+    {% endif %}
+</body>
+</html>
